@@ -1,0 +1,131 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=3600">
+    <title>广义相对论</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        #container {
+            width: 800px;
+            margin: 20px;
+            position: relative;
+        }
+
+        #title {
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        #player {
+            width: 800px;
+            height: 450px;
+            background-color: #000;
+        }
+
+        #button-row {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            position: relative;
+            top: 0;
+        }
+
+        #likeButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: skyblue;
+            border: 1px solid skyblue;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        #coinButton,
+        #collectButton,
+        #shareButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: skyblue;
+            border: 1px solid skyblue;
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+
+     .close-btn {
+            cursor: pointer;
+            color: #f00;
+            float: right;
+            font-size: 18px;
+        }
+
+     .bold {
+            font-weight: bold;
+        }
+
+     .blue {
+            color: darkblue;
+        }
+
+     .small-text {
+            font-size: 14px;
+        }
+
+     .divider {
+            border-top: 1px solid #ccc;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">广义相对论基本原理简单解释，时空弯曲和时间膨胀的推理过程</div>
+        <div id="player"></div>
+        <div id="button-row">
+            <button id="likeButton">点赞</button>
+            <button id="coinButton">投币</button>
+            <button id="collectButton">收藏</button>
+            <button id="shareButton">转发</button>
+        </div>
+        <hr class="divider">
+    </div>
+
+
+    <script src="https://player.polyv.net/script/player.js"></script>
+    <script>
+        var player;
+
+        function initPlayer() {
+            player = polyvPlayer({
+                wrap: '#player',
+                width: '100%',
+                height: 450,
+                vid: 'g9e4d258716a71cb9add4e57ceafa354_g'
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', initPlayer);
+    </script>
+
+</body>
+</html>
